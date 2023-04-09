@@ -1,2 +1,13 @@
-<p>{{ image.title }}</p>
-<img [src]="image.thumbnailUrl" [alt]="image.title">
+<div class="card">
+  <div class="card__container">
+    <p class="card__title">{{ image.title }}</p>
+    <img class="card__img" [src]="image.thumbnailUrl" [alt]="image.title" />
+  </div>
+  <button
+    class="card__button"
+    [ngClass]="{
+      card__button_inactive: !isLiked
+    }"
+    (click)="isLiked = !isLiked"
+  ></button>
+</div>

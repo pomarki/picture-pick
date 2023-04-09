@@ -1,0 +1,50 @@
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 3px 3px 9px -2px rgba(34, 60, 80, 0.2);
+}
+
+.card__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__img {
+  height: 150px;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.card__title {
+  margin: 0 0 0 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__button {
+  padding: 0;
+  margin-top: 10px;
+  width: 14px;
+  height: 12px;
+  background: no-repeat url(../../images/heart.svg);
+  border: 0;
+  cursor: pointer;
+}
+
+.card__button_inactive {
+  background: no-repeat url(../../images/heart__gray.svg);
+}
+
+

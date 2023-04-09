@@ -12,7 +12,7 @@ export class ImagesService {
   getAll(): Observable<IImage[]> {
     return this.http.get<IImage[]>(
       'https://jsonplaceholder.typicode.com/photos',
-      { params: new HttpParams().append('_limit', 50) }
+      { params: new HttpParams().append('_limit', 48) }
     );
   }
 }
